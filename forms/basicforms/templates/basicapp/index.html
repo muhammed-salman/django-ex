@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+ {% block body_block %}
+      <div class="jumbotron">
+        <h1>Welcome to homepage!</h1>
+        <h2>Go to /formpage to fill out the form</h2>
+        <h3>{{ text|cut:'world' }}</h3>
+        <h3>{{ number|add:"99" }}</h3>
+    </div>
+{% endblock %}
